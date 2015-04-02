@@ -30,3 +30,11 @@
 
 # Debug files
 *.dSYM/
+*.idb
+
+# Log files
+*.tlog
+
+# Other files
+*.opensdf
+*.gitattributes
