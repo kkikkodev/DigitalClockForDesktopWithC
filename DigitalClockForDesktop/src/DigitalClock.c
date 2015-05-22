@@ -4,6 +4,8 @@
 #include "DigitalClock.h"
 #include "Util.h"
 
+#define GMT (+9)
+
 #define DAY_OF_WEEK_SIZE 7
 
 const static char* DAY_OF_WEEK[DAY_OF_WEEK_SIZE] = {
@@ -102,12 +104,12 @@ static void _PrintPattern(int pattern, int type);
 DigitalClock DigitalClock_GetTime(){
 	DigitalClock digitalClock = {0, };
 	time_t now = time(NULL);
-	struct tm* time = localtime(&now);
+	struct tm* time = gmtime(&now);
 	digitalClock.year = time->tm_year + 1900;
 	digitalClock.month = time->tm_mon + 1;
 	digitalClock.dayOfMonth = time->tm_mday;
 	digitalClock.dayOfWeek = time->tm_wday;
-	digitalClock.hour = time->tm_hour;
+	digitalClock.hour = (time->tm_hour + GMT) % 24;
 	digitalClock.minute = time->tm_min;
 	digitalClock.second = time->tm_sec;
 	return digitalClock;
@@ -159,5 +161,4 @@ static void _PrintPattern(int pattern, int type){
 		}
 		CursorUtil_GotoXY(x, y++);
 	}
-	CursorUtil_GotoXY(0, y);
 }
