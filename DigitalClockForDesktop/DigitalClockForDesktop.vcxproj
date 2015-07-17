@@ -10,8 +10,32 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\AlarmClockManager.c" />
+    <ClCompile Include="..\src\Date.c" />
+    <ClCompile Include="..\src\DigitalClockView.c" />
+    <ClCompile Include="..\src\Main.c" />
+    <ClCompile Include="..\src\Menu.c" />
+    <ClCompile Include="..\src\NormalClockManager.c" />
+    <ClCompile Include="..\src\Point.c" />
+    <ClCompile Include="..\src\Time.c" />
+    <ClCompile Include="..\src\TimePicker.c" />
+    <ClCompile Include="..\src\Util.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\AlarmClockManager.h" />
+    <ClInclude Include="..\src\Constant.h" />
+    <ClInclude Include="..\src\Date.h" />
+    <ClInclude Include="..\src\DigitalClockView.h" />
+    <ClInclude Include="..\src\Menu.h" />
+    <ClInclude Include="..\src\NormalClockManager.h" />
+    <ClInclude Include="..\src\Point.h" />
+    <ClInclude Include="..\src\Time.h" />
+    <ClInclude Include="..\src\TimePicker.h" />
+    <ClInclude Include="..\src\Util.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{396C70AC-4EEC-4046-8657-C928FF2526ED}</ProjectGuid>
+    <ProjectGuid>{40B8A834-945F-458E-838D-10E74BFD86B9}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>DigitalClockForDesktop</RootNamespace>
   </PropertyGroup>
@@ -77,15 +101,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="src\DigitalClock.c" />
-    <ClCompile Include="src\Main.c" />
-    <ClCompile Include="src\Util.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="src\DigitalClock.h" />
-    <ClInclude Include="src\Util.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
