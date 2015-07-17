@@ -38,3 +38,7 @@
 # Other files
 *.opensdf
 *.gitattributes
+*.sdf
+*.sln
+*.vcxproj
+*.filters
