@@ -12,7 +12,7 @@
 
 void DigitalClockView_Init(DigitalClockView* digitalClockView){
 	char items[MENU_ITEMS_COUNT][MENU_ITEMS_CONTENT_SIZE] = {
-		"[1] Normal Clock", "[2] Alarm Clock", "[4] Exit"
+		"[1] Normal Clock", "[2] Alarm Clock", "[3] Exit"
 	};
 	int menuCount = 3;
 	WindowUtil_ChangeWindowSize(WINDOW_LINE_SIZE, WINDOW_COL_SIZE);
