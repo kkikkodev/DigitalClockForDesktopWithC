@@ -6,6 +6,6 @@ digital clock for desktop (OS : windows / IDE : visual studio 2013)
 [ver 0.1 : https://youtu.be/O2NnC_rjXBg]
 - 현재 시각 가져와서 출력하기 (년, 월, 일, 요일, 시, 분, 초)
 
-[ver 0.2 : https://youtu.be/0shKLPLfONk]
+[ver 0.2 : https://youtu.be/ZPbdAWjqtzA]
 - 일반 시계 UI 개선 + 소리 추가
 - 알람 시계 기능 추가
